@@ -3,7 +3,7 @@ FROM ubuntu:latest
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update; \
-  apt-get -y install locales dialog apt-utils man-db bc zsh fish zip unzip sudo tmux bat vim emacs-nox git iproute2 procps lsb-release build-essential autoconf automake m4 bison flex gettext httpie jq; \
+  apt-get -y install locales dialog apt-utils man-db bc zsh fish zip unzip sudo tmux bat vim emacs-nox git iproute2 procps lsb-release build-essential autoconf automake cmake m4 bison flex gettext httpie jq; \
   apt-get -y install clang clang-14 clang-format-14 clang-14-doc libc++1-14 libc++-14-dev libc++abi-14-dev; \
   apt-get -y install libssl-dev libcurl4-openssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev libelf-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl; \
   apt-get -y install libgmp-dev; \
