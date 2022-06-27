@@ -16,4 +16,4 @@ RUN apt-get update; \
 
 ENV DEBIAN_FRONTEND=
 
-CMD["/bin/bash"]
+CMD ["/bin/bash"]
