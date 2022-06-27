@@ -5,7 +5,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "extension ms-vscode.cpptools",
+        "ms-vscode.cpptools",
         "ms-vscode.makefile-tools",
         "visualstudioexptteam.vscodeintellicode"
       ]
