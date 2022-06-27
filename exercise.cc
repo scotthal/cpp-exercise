@@ -1,6 +1,6 @@
-#include <iostream>
-
 #include "exercise.h"
+
+#include <iostream>
 
 namespace exercise {
 int exercise() {
