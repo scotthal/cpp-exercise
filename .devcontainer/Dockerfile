@@ -27,6 +27,9 @@ RUN apt-get update; \
   chown ${USERNAME}:${USERNAME} /home/${USERNAME}/bin; \
   install -o ${USERNAME} -g ${USERNAME} /tmp/bazel /home/${USERNAME}/bin/bazel; \
   rm -f /tmp/bazel; \
+  curl -L https://github.com/bazelbuild/buildtools/releases/download/5.1.0/buildifier-linux-amd64 > /tmp/buildifier; \
+  install -o ${USERNAME} -g ${USERNAME} /tmp/buildifier /home/${USERNAME}/bin/buildifier; \
+  rm -f /tmp/buildifier; \
   apt-get autoremove -y ;\
   apt-get clean -y; \
   rm -rf /var/lib/apt/lists/*
