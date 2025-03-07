@@ -1,3 +1,3 @@
-exercise
-*.o
+.cache/
+build/
 .vscode/*.log
